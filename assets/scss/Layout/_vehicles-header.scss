@@ -1,0 +1,34 @@
+#vehicles {
+  background-color: $color-blue-overlay;
+  #vehicles-content {
+    width: 80%;
+    margin: auto;
+    .vehicles-nav {
+      background-color: $color-white;
+      ul {
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: $pd-3 0;
+        li {
+          display: inline;
+          a {
+            text-decoration: none;
+            padding: $pd-1 $pd-4;
+            @include formatText($color-dark-blue-300, $fw-bold, $fs-1);
+            border-right: $border-2;
+            &:hover {
+              color: $color-blue-200;
+            }
+          }
+        }
+
+        .active {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

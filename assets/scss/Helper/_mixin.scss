@@ -1,0 +1,5 @@
+@mixin formatText($color, $fw, $fs) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}

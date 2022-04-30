@@ -4,7 +4,11 @@ $color-blue-100: #007cc3;
 $color-blue-200: #2198dc;
 $color-dark-blue-100: #00446a;
 $color-dark-blue-200: #00324f;
+$color-dark-blue-300: #06456a;
+$color-blue-overlay: rgba(0, 67, 108, 0.8);
 $color-orange: #ff4040;
+// FONT WEIGHT
+$fw-bold: bold;
 // FONTSIZE //
 $fs-html: 16px;
 $fs-1: 1.4rem;
@@ -24,3 +28,8 @@ $mg-2: 30px;
 $mg-3: 45px;
 $mg-4: 60px;
 $mg-5: 100px;
+$mg-6: 15px;
+
+// BORDER
+$border-1: 1px solid #4f91ca;
+$border-2: 0.2rem solid #e5e5e5;
