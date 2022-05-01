@@ -1,27 +1,31 @@
 header {
-  background-color: $color-blue-100;
+  position: fixed;
+  top: 0;
+  left: 0;
   .navbar {
+    background-color: $color-blue-100;
+
     padding: 0 $pd-2;
     > a:first-child {
       padding: 0 $pd-4;
       border: none;
+    }
+    a {
+      color: $color-white;
+      padding: $pd-3 $pd-4;
+      text-decoration: none;
+      border-right: $border-1;
+      border-left: $border-1;
+      font-size: $fs-1;
+      i {
+        margin-left: $mg-6;
+      }
     }
   }
   #header__menu {
     .nav-link {
       color: $color-white;
       padding: $pd-3 $pd-4;
-    }
-  }
-  a {
-    color: $color-white;
-    padding: $pd-3 $pd-4;
-    text-decoration: none;
-    border-right: $border-1;
-    border-left: $border-1;
-    font-size: $fs-1;
-    i {
-      margin-left: $mg-6;
     }
   }
 }

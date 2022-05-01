@@ -1,0 +1,21 @@
+.btn-vehicles {
+  @include button(
+    $color-blue-200,
+    $color-blue-200,
+    $color-white,
+    $pd-1 $pd-6,
+    $color-white,
+    $color-blue-200
+  );
+  margin-right: $mg-7;
+}
+.btn-vehicles-active {
+  @include button(
+    $color-blue-200,
+    $color-white,
+    $color-blue-200,
+    $pd-1 $pd-6,
+    $color-blue-200,
+    $color-white
+  );
+}

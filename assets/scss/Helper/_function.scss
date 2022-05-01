@@ -1,0 +1,18 @@
+$listbgGradiant: (
+  1: #3c4c5c,
+  2: #5e5e5e,
+  3: #14409a,
+  4: #c0bab5,
+  5: #5c5c5c,
+  6: #33569c,
+);
+@each $key, $val in $listbgGradiant {
+  #vehicles-img-#{$key} {
+    background: linear-gradient(#bbbdc0, $color-grey, $color-grey);
+  }
+  .vehicles-product {
+    &:hover > #vehicles-img-#{$key} {
+      background: linear-gradient($val, $color-grey, $color-grey);
+    }
+  }
+}

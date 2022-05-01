@@ -7,13 +7,16 @@ $color-dark-blue-200: #00324f;
 $color-dark-blue-300: #06456a;
 $color-blue-overlay: rgba(0, 67, 108, 0.8);
 $color-orange: #ff4040;
+$color-grey: #f6f6f6;
 // FONT WEIGHT
 $fw-bold: bold;
+$fw-normal: normal;
 // FONTSIZE //
 $fs-html: 16px;
 $fs-1: 1.4rem;
 $fs-2: 1.8rem;
 $fs-3: 6rem;
+$fs-4: 2.4rem;
 // PADDING //
 $pd-1: 6px;
 $pd-2: 15px;
@@ -21,14 +24,18 @@ $pd-3: 20px;
 $pd-4: 25px;
 $pd-5: 30px;
 $pd-6: 50px;
+$pd-7: 5%;
 // MARGIN //
 $mg-up: -200px; // cai nay la cai hinh anh no nam giua 2 phan
+$mg-up-1: -2.7rem; // cai nay la cai hinh anh no nam giua 2 phan
+$mg-up-2: -5px; // cai nay la cai hinh anh no nam giua 2 phan
 $mg-1: 20px;
 $mg-2: 30px;
 $mg-3: 45px;
 $mg-4: 60px;
 $mg-5: 100px;
 $mg-6: 15px;
+$mg-7: 5px;
 
 // BORDER
 $border-1: 1px solid #4f91ca;

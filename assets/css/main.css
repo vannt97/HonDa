@@ -1,3 +1,51 @@
+#vehicles-img-1 {
+  background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
+}
+
+.vehicles-product:hover > #vehicles-img-1 {
+  background: linear-gradient(#3c4c5c, #f6f6f6, #f6f6f6);
+}
+
+#vehicles-img-2 {
+  background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
+}
+
+.vehicles-product:hover > #vehicles-img-2 {
+  background: linear-gradient(#5e5e5e, #f6f6f6, #f6f6f6);
+}
+
+#vehicles-img-3 {
+  background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
+}
+
+.vehicles-product:hover > #vehicles-img-3 {
+  background: linear-gradient(#14409a, #f6f6f6, #f6f6f6);
+}
+
+#vehicles-img-4 {
+  background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
+}
+
+.vehicles-product:hover > #vehicles-img-4 {
+  background: linear-gradient(#c0bab5, #f6f6f6, #f6f6f6);
+}
+
+#vehicles-img-5 {
+  background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
+}
+
+.vehicles-product:hover > #vehicles-img-5 {
+  background: linear-gradient(#5c5c5c, #f6f6f6, #f6f6f6);
+}
+
+#vehicles-img-6 {
+  background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
+}
+
+.vehicles-product:hover > #vehicles-img-6 {
+  background: linear-gradient(#33569c, #f6f6f6, #f6f6f6);
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -8,10 +56,13 @@ html {
 }
 
 header {
-  background-color: #007cc3;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 header .navbar {
+  background-color: #007cc3;
   padding: 0 15px;
 }
 
@@ -20,12 +71,7 @@ header .navbar > a:first-child {
   border: none;
 }
 
-header #header__menu .nav-link {
-  color: #fff;
-  padding: 20px 25px;
-}
-
-header a {
+header .navbar a {
   color: #fff;
   padding: 20px 25px;
   text-decoration: none;
@@ -34,8 +80,13 @@ header a {
   font-size: 1.4rem;
 }
 
-header a i {
+header .navbar a i {
   margin-left: 15px;
+}
+
+header #header__menu .nav-link {
+  color: #fff;
+  padding: 20px 25px;
 }
 
 .no-border {
@@ -44,11 +95,6 @@ header a i {
 
 #vehicles {
   background-color: rgba(0, 67, 108, 0.8);
-}
-
-#vehicles #vehicles-content {
-  width: 80%;
-  margin: auto;
 }
 
 #vehicles #vehicles-content .vehicles-nav {
@@ -81,4 +127,119 @@ header a i {
 
 #vehicles #vehicles-content .vehicles-nav ul .active a {
   text-decoration: underline;
+}
+
+#vehicles #vehicles-content #vehicles-list {
+  background-color: #f6f6f6;
+  padding: 50px;
+  padding-bottom: 200px;
+  max-height: 700px;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-title h1 {
+  background-color: #f6f6f6;
+  color: #00324f;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 0 6px;
+  position: relative;
+  top: -2.7rem;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-title h1 i {
+  font-size: 1.2rem;
+  position: relative;
+  top: -5px;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-title h1 span {
+  font-weight: normal;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product {
+  margin-bottom: 35px;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product:hover > .vehicles-img img:last-child {
+  display: block;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product:hover > .vehicles-img img:first-child {
+  display: none;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product .vehicles-img img:last-child {
+  display: none;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product .vehicles-img {
+  height: 250px;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product h2 {
+  text-align: center;
+  color: #00324f;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product .vehicles-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product .vehicles-info h3 {
+  color: #00324f;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product .vehicles-info p {
+  color: #00324f;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+#vehicles #vehicles-content #vehicles-list .vehicles-product .vehicles-button {
+  text-align: center;
+}
+
+.container--config {
+  padding: 0 5%;
+}
+
+.btn-vehicles {
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+  background-color: #2198dc;
+  color: #fff;
+  padding: 6px 50px;
+  transition: all 0.5s;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+
+.btn-vehicles:hover {
+  background-color: #fff;
+  color: #2198dc;
+}
+
+.btn-vehicles-active {
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #2198dc;
+  padding: 6px 50px;
+  transition: all 0.5s;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.btn-vehicles-active:hover {
+  background-color: #2198dc;
+  color: #fff;
 }

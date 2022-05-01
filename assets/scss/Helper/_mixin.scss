@@ -3,3 +3,17 @@
   font-size: $fs;
   font-weight: $fw;
 }
+@mixin button($borderColor, $bg, $color, $padding, $bg-hover, $color-hover) {
+  border: 2px solid $borderColor;
+  border-radius: 40px;
+  background-color: $bg;
+  color: $color;
+  padding: $padding;
+  transition: all 0.5s;
+  font-weight: $fw-bold;
+  font-size: $fs-1;
+  &:hover {
+    background-color: $bg-hover;
+    color: $color-hover;
+  }
+}
