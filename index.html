@@ -27,18 +27,24 @@
       rel="stylesheet"
       href="./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"
     />
+    <!-- Animate css -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" id="header__navbar">
         <a class="" href="#">
           <img src="./assets/img/logo.png" alt="" />
         </a>
-        <a href="#"> VEHICLES<i class="fa-solid fa-chevron-down"></i> </a>
-        <a href="#"> SHOPPING TOOLS<i class="fa-solid fa-chevron-down"></i> </a>
+        <a href="#" id="navbar-item-vehicles">
+          VEHICLES<i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <a href="# " id="navbar-item-shoppingtools">
+          SHOPPING TOOLS<i class="fa-solid fa-chevron-down"></i>
+        </a>
         <div class="header__right ms-auto d-flex d-flex align-items-center">
           <a href="#" class="no-border">
             <i class="fa-solid fa-location-dot"></i>Dealer</a
@@ -80,9 +86,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </nav>
-      <section id="vehicles">
+      <section id="vehicles" class="hide">
         <div id="vehicles-content" class="container-fluid container--config">
-          <div class="vehicles-nav">
+          <div class="vehicles-nav animate__animated">
             <nav class="row">
               <div class="col">
                 <ul>
@@ -109,7 +115,13 @@
               </div>
             </nav>
           </div>
-          <div id="vehicles-list">
+          <div class="vehicles-close animate__animated">
+            <div class="vehicles-circle">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p>CLOSE</p>
+          </div>
+          <div id="vehicles-list" class="animate__animated">
             <div class="row">
               <div class="col-12" id="car">
                 <hr class="line" />
@@ -122,7 +134,7 @@
                 </div>
               </div>
               <!-- VEHICLES-PRODUCT -->
-              <div class="col-4 vehicles-product">
+              <div class="col-4 vehicles-product vehicles-product-delay-1">
                 <div class="vehicles-img" id="vehicles-img-1">
                   <img src="./assets/img/xe-1.png" alt="" class="img-fluid" />
                   <img
@@ -150,7 +162,7 @@
                 </div>
               </div>
               <!-- VEHICLES-PRODUCT -->
-              <div class="col-4 vehicles-product">
+              <div class="col-4 vehicles-product vehicles-product-delay-2">
                 <div class="vehicles-img" id="vehicles-img-2">
                   <img src="./assets/img/xe-2.png" alt="" class="img-fluid" />
                   <img
@@ -178,7 +190,7 @@
                 </div>
               </div>
               <!-- VEHICLES-PRODUCT -->
-              <div class="col-4 vehicles-product">
+              <div class="col-4 vehicles-product vehicles-product-delay-3">
                 <div class="vehicles-img" id="vehicles-img-3">
                   <img src="./assets/img/xe-3.png" alt="" class="img-fluid" />
                   <img
@@ -206,7 +218,7 @@
                 </div>
               </div>
               <!-- VEHICLES-PRODUCT -->
-              <div class="col-4 vehicles-product">
+              <div class="col-4 vehicles-product vehicles-product-delay-4">
                 <div class="vehicles-img" id="vehicles-img-4">
                   <img src="./assets/img/xe-4.png" alt="" class="img-fluid" />
                   <img
@@ -234,7 +246,7 @@
                 </div>
               </div>
               <!-- VEHICLES-PRODUCT -->
-              <div class="col-4 vehicles-product">
+              <div class="col-4 vehicles-product vehicles-product-delay-5">
                 <div class="vehicles-img" id="vehicles-img-5">
                   <img src="./assets/img/xe-1.png" alt="" class="img-fluid" />
                   <img
@@ -262,7 +274,7 @@
                 </div>
               </div>
               <!-- VEHICLES-PRODUCT -->
-              <div class="col-4 vehicles-product">
+              <div class="col-4 vehicles-product vehicles-product-delay-6">
                 <div class="vehicles-img" id="vehicles-img-6">
                   <img src="./assets/img/xe-3.png" alt="" class="img-fluid" />
                   <img
@@ -689,5 +701,7 @@
         }
       });
     </script>
+    <!-- Main -->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

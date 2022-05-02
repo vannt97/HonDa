@@ -15,4 +15,7 @@ $listbgGradiant: (
       background: linear-gradient($val, $color-grey, $color-grey);
     }
   }
+  .vehicles-product-delay-#{$key} {
+    animation-delay: 0.2s * $key;
+  }
 }

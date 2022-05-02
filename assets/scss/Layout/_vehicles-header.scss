@@ -1,6 +1,8 @@
 #vehicles {
   background-color: $color-blue-overlay;
   #vehicles-content {
+    position: relative;
+    z-index: 1;
     .vehicles-nav {
       background-color: $color-white;
       ul {
@@ -26,6 +28,45 @@
             text-decoration: underline;
           }
         }
+      }
+    }
+    .vehicles-close {
+      background-color: $color-grey;
+      width: $vehicles-cloes-width;
+      text-align: center;
+      position: absolute;
+      top: 65px;
+      right: 26px;
+      padding: $pd-2 0;
+      border-top-right-radius: $border-radius-1;
+      border-bottom-right-radius: $border-radius-1;
+      cursor: pointer;
+      &:hover .vehicles-circle {
+        border-color: $color-dark-blue-100;
+      }
+      &:hover .vehicles-circle i {
+        color: $color-dark-blue-100;
+      }
+
+      &:hover p {
+        color: $color-dark-blue-100;
+      }
+      .vehicles-circle {
+        height: $vehicles-cloes-size;
+        width: $vehicles-cloes-size;
+        border: 1px solid $color-blue-100;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        i {
+          color: $color-blue-100;
+          line-height: 23px;
+          font-size: $fs-1;
+        }
+      }
+      p {
+        @include formatText($color-blue-100, $fw-bold, $fs-1);
+        margin: 0;
       }
     }
     #vehicles-list {
@@ -87,6 +128,9 @@
         }
       }
     }
+  }
+  &.hide {
+    display: none;
   }
 }
 .container--config {

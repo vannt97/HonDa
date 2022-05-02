@@ -2,6 +2,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   .navbar {
     background-color: $color-blue-100;
 
@@ -20,6 +21,11 @@ header {
       i {
         margin-left: $mg-6;
       }
+    }
+    #navbar-item-vehicles.active,
+    #navbar-item-shoppingtools.active {
+      background-color: $color-white;
+      color: $color-blue-100;
     }
   }
   #header__menu {
